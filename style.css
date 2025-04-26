@@ -1,0 +1,72 @@
+@importurl('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+  margin: 0;
+  padding: 0 ;
+  box-sizing: border-box;
+}
+body{
+background-color:#14111d ;
+display: grid;
+place-content: center;
+height: 100vh;
+gap: 16px;
+
+} 
+#app{
+  max-width: 360px;
+ padding-inline: 40px;
+}
+h1{
+  color: white;
+  font-family: "Inter", sans-serif;
+font-size: 32px;
+}
+p{
+  margin-top: 8px;
+  color: white;
+  font-family: "Inter", sans-serif;
+  opacity: 0.7;
+}
+.buttons{
+  margin-top: 60px;
+  display: grid;
+  gap: 32px;
+}
+.primary{
+  --bg-default: #8257e5;
+  --bg-hover: #9b7ce3;
+  }
+
+.secondary{
+  --bg-default: #3c3748;
+  --bg-hover: #6a617f;
+  }
+.tertiary{
+  --bg-default: transparent;
+  --bg-hover: transparent;
+  }
+button{
+  background-color: var(--bg-default);
+  font-family: "inter";
+  border: 0;
+  color: white;
+  padding: 12px 24px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  border-radius: 24px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+button:hover{
+  background-color: var(--bg-hover);
+}
+button:focus{
+  outline: 2px solid #d9cdf7;
+}
